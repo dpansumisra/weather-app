@@ -4,12 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Ensure the body takes the full height of the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Center-align all content inside the div */
+        div {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling input and button */
+        input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div>
-        <input type="text" placeholder="Enter city Name">
-        <button>Search</button>
+        <div>
+            <input id="city-input" type="text" placeholder="Enter city Name">
+            <button id="Search-btn">Search</button>
+        </div>
+        <div>
+            <h3 id="city-name">City, State- Country</h3>
+            <h6 id="city-time">Time</h6>
+            <p id="city-temp">Temperature</p>
+        </div>
     </div>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
